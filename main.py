@@ -41,7 +41,7 @@ def carparkcheck(img):
         cv2.rectangle(frame, pos, (pos[0] + width, pos[1] + height), color, thickness)
         putTextRect(frame, str(countwhite), (x,y + height -3), scale = 1, thickness = 2, offset = 0, colorR = countwhite)
 
-    putTextRect(frame, f'Free: {carparcount}/{len(posList)}', (100, 50), scale=3, thickness = 5, offset = 20, colorR = (0,200,0))
+    putTextRect(frame, f'Free: {carparcount} / {len(posList)}', (100, 50), scale=3, thickness = 5, offset = 20, colorR = (0,200,0))
 
 
 while True:
